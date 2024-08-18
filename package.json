@@ -1,0 +1,21 @@
+{
+    "name": "bun-mono",
+    "version": "0.1.0",
+    "type": "module",
+    "module": "index.ts",
+    "scripts": {
+        "dev": "pnpm run --filter=app dev",
+        "ui:dev": "pnpm run --filter=my-component dev",
+        "ui": "pnpm run --filter=my-component build:lib"
+    },
+    "devDependencies": {
+        "@types/bun": "latest",
+        "turbo": "^2.0.14"
+    },
+    "peerDependencies": {
+        "typescript": "^5.0.0"
+    },
+    "workspaces": [
+        "packages/*"
+    ]
+}
